@@ -93,3 +93,20 @@
     padding: 0.6rem;
     border-bottom: 1px solid #ddd;
 }
+
+.clock {
+    font-weight: bold;
+    font-size: 1.1rem;
+    background: #ffffff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 2rem;
+    color: #555;
+}
