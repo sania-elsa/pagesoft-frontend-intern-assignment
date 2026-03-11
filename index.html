@@ -5,98 +5,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sania Elsa Regi | Developer Dashboard</title>
-
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-
+<body class="light-mode">
     <header class="header">
         <div class="header-container">
             <div class="logo">
                 <strong>Dev</strong>Profile
             </div>
             <div class="header-actions">
-                <div id="clock" class="clock">00:00:00</div>
+                <div class="clock" id="clock">00:00:00</div>
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+                    <!-- Sun Icon for Light Mode -->
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Moon Icon for Dark Mode -->
+                    <svg class="icon-moon" style="display: none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
 
     <main class="main-content">
+        <!-- 1. Personal Profile Section -->
+        <section class="section profile-section" aria-label="Personal Profile">
+            <div class="profile-card card">
+                <div class="profile-image-wrapper">
+                    <img src="assets/images/myphoto.jpeg" alt="Profile Image" class="profile-img">
+                </div>
+                <div class="profile-info">
+                    <h1 class="fullname">Sania Elsa Regi</h1>
+                    <p class="bio">Frontend developer with strong interest in building responsive and user-friendly web
+                        applications. Experienced in HTML, CSS, JavaScript and Python, with projects in web development
+                        and machine learning.</p>
 
-        <!-- Content will be added in later commits -->
-
-    </main>
-    <section class="card profile-card">
-        <img src="assets/images/myphoto.jpg" alt="Profile Photo" class="profile-img">
-
-        <div class="profile-info">
-            <h1 class="fullname">Sania Elsa Regi</h1>
-            <p class="bio">
-                Computer Science student passionate about web development and building modern user interfaces.
-            </p>
-
-            <div class="skills-container">
-                <span class="skill-badge">HTML</span>
-                <span class="skill-badge">CSS</span>
-                <span class="skill-badge">JavaScript</span>
-                <span class="skill-badge">Python</span>
-                <span class="skill-badge">Git & GitHub</span>
-                <span class="skill-badge">Machine Learning</span>
+                    <div class="skills-container">
+                        <span class="skill-badge">HTML</span>
+                        <span class="skill-badge">CSS</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Git & GitHub</span>
+                        <span class="skill-badge">Machine Learning</span>
+                    </div>
+                </div>
             </div>
-            <section class="card projects-section">
-                <h2 class="section-title">Projects</h2>
+        </section>
 
+        <div class="dashboard-grid">
+            <!-- 3. Projects Section -->
+            <section class="section projects-section card" aria-label="Projects">
+                <h2 class="section-title">My Projects</h2>
                 <div class="projects-grid">
-
                     <div class="project-card">
                         <h3 class="project-title">Pneumonia Detection and classification using Chest xrays</h3>
-                        <p class="project-desc">
-                            A deep learning–based system that analyzes chest X-ray images to detect pneumonia
-                            automatically. The model helps assist doctors in early diagnosis by providing fast and
-                            accurate predictions from medical images.
-                        </p>
-                        <a href="#" class="project-link">View Project</a>
+                        <p class="project-desc">A deep learning–based system that analyzes chest X-ray images to detect
+                            pneumonia automatically. The model helps assist doctors in early diagnosis by providing fast
+                            and accurate predictions from medical images.</p>
+                        <a href="https://github.com/sania-elsa/pneumonia-detection-chestxray" target="_blank"
+                            rel="noopener noreferrer" class="project-link">
+                            View on GitHub
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
                     </div>
-
                     <div class="project-card">
                         <h3 class="project-title">Enroute:Tourism guide for Coastal areas</h3>
-                        <p class="project-desc">
-                            A location-based platform that provides real-time updates about beaches and nearby places
-                            like restaurants, cafes, resorts, and events to help users explore coastal areas easily.
-                        </p>
-                        <a href="#" class="project-link">View Project</a>
+                        <p class="project-desc">A location-based platform that provides real-time updates about beaches
+                            and nearby places like restaurants, cafes, resorts, and events to help users explore coastal
+                            areas easily.</p>
+                        <a href="https://github.com/sania-elsa/Project" target="_blank" rel="noopener noreferrer"
+                            class="project-link">
+                            View on GitHub
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
                     </div>
-
                     <div class="project-card">
                         <h3 class="project-title">Secret Santa</h3>
-                        <p class="project-desc">
-                            A simple and interactive user interface designed to simulate the process of organizing a
-                            Secret Santa gift exchange.
-                        </p>
-                        <a href="#" class="project-link">View Project</a>
+                        <p class="project-desc">A simple and interactive user interface designed to simulate the process
+                            of organizing a Secret Santa gift exchange.</p>
+                        <a href="https://github.com/sania-elsa/Secret-Santa" target="_blank" rel="noopener noreferrer"
+                            class="project-link">
+                            View on GitHub
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
                     </div>
-
                 </div>
-                <section class="card todo-section">
-                    <h2 class="section-title">Todo List</h2>
+            </section>
 
-                    <form id="todo-form" class="todo-form">
-                        <input type="text" id="todo-input" class="todo-input" placeholder="Add a new task..." required>
-                        <button type="submit" class="btn-primary">Add</button>
-                    </form>
-
-                    <ul id="todo-list" class="todo-list"></ul>
-                </section>
+            <!-- 5. Todo List Section -->
+            <section class="section todo-section card" aria-label="Todo List">
+                <h2 class="section-title">Tasks</h2>
+                <form id="todo-form" class="todo-form">
+                    <input type="text" id="todo-input" class="todo-input" placeholder="What needs to be done?" required>
+                    <button type="submit" class="btn-primary">Add Task</button>
+                </form>
+                <ul id="todo-list" class="todo-list">
+                    <!-- Todos appended dynamically via JS -->
+                </ul>
             </section>
         </div>
-    </section>
+    </main>
+
     <footer class="footer">
-        <p>© <span id="year"></span> DevProfile. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Sania Elsa Regi. Built using HTML, CSS and Vanilla JavaScript.</p>
     </footer>
 
     <script src="js/script.js"></script>
-
 </body>
 
 </html>
