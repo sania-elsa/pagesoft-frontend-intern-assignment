@@ -24,7 +24,7 @@ How to Run the Project:
 
 No additional installation is required.
 
-GitHub Pages Link: https://github.com/sania-elsa/pagesoft-frontend-intern-assignment
+GitHub Pages Link: https://sania-elsa.github.io/pagesoft-frontend-intern-assignment/
 
 ### Development Decisions
 
